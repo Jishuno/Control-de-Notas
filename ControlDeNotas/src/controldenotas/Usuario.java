@@ -11,7 +11,11 @@ package controldenotas;
  */
 public class Usuario {
     protected String Nombre;
+    protected String PrimerAp;
+    protected String SegundAp;
     protected int TipoUser;
+    protected String Correo;
+    protected double Contraseña;
 
     public String getNombre() {
         return Nombre;
@@ -28,6 +32,39 @@ public class Usuario {
     public void setTipoUser(int TipoUser) {
         this.TipoUser = TipoUser;
     }
+
+    public String getPrimerAp() {
+        return PrimerAp;
+    }
+
+    public void setPrimerAp(String PrimerAp) {
+        this.PrimerAp = PrimerAp;
+    }
+
+    public String getSegundAp() {
+        return SegundAp;
+    }
+
+    public void setSegundAp(String SegundAp) {
+        this.SegundAp = SegundAp;
+    }
+
+    public String getCorreo() {
+        return Correo;
+    }
+
+    public void setCorreo(String Correo) {
+        this.Correo = Correo;
+    }
+
+    public double getContraseña() {
+        return Contraseña;
+    }
+
+    public void setContraseña(double Contraseña) {
+        this.Contraseña = Contraseña;
+    }
+    
     
     
 }

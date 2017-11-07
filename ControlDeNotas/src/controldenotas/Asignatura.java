@@ -14,10 +14,12 @@ import java.util.ArrayList;
 public class Asignatura {
     private ArrayList<Estudiante> Estudiantes;
     private Docente Docente;
+    private String NombreAsignatura;
 
-    public Asignatura(ArrayList<Estudiante> Estudiantes, Docente Docente) {
+    public Asignatura(ArrayList<Estudiante> Estudiantes, Docente Docente, String NombreAsignatura) {
         this.Estudiantes = Estudiantes;
         this.Docente = Docente;
+        this.NombreAsignatura = NombreAsignatura;
     }
 
     public ArrayList<Estudiante> getEstudiantes() {
@@ -35,6 +37,15 @@ public class Asignatura {
     public void setDocente(Docente Docente) {
         this.Docente = Docente;
     }
+
+    public String getNombreAsignatura() {
+        return NombreAsignatura;
+    }
+
+    public void setNombreAsignatura(String NombreAsignatura) {
+        this.NombreAsignatura = NombreAsignatura;
+    }
+    
     
     
 }

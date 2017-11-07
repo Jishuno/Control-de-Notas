@@ -13,6 +13,7 @@ public class Notas {
     private float Parcial1;
     private float Parcial2;
     private float Seguimiento;
+    private float Definitiva;
 
     public Notas(float Parcial1, float Parcial2, float Seguimiento) {
         this.Parcial1 = Parcial1;
@@ -42,6 +43,14 @@ public class Notas {
 
     public void setSeguimiento(float Seguimiento) {
         this.Seguimiento = Seguimiento;
+    }
+
+    public float getDefinitiva() {
+        return Definitiva;
+    }
+
+    public void setDefinitiva(float Definitiva) {
+        this.Definitiva = Definitiva;
     }
     
     

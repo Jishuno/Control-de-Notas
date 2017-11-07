@@ -14,12 +14,18 @@ import java.util.ArrayList;
 public class Estudiante extends Usuario {
     private int doc;
     private String[] Asig;
+    private int CodigoEstu;
     private ArrayList<Notas> Notas;
 
-    public Estudiante(int doc, String[] Asig, ArrayList<Notas> Notas) {
+    public Estudiante(int doc, String[] Asig, ArrayList<Notas> Notas, String Nombre, String PrimerAp, String SegundAp, String Correo, double Contraseña) {
         this.doc = doc;
         this.Asig = Asig;
         this.Notas = Notas;
+        this.Nombre = Nombre;
+        this.PrimerAp = PrimerAp;
+        this.SegundAp = SegundAp;
+        this.Correo = Correo;
+        this.Contraseña = Contraseña;
     }
 
     public int getDoc() {
@@ -46,20 +52,52 @@ public class Estudiante extends Usuario {
         this.Notas = Notas;
     }
 
+    @Override
     public String getNombre() {
         return Nombre;
     }
 
+    @Override
     public void setNombre(String Nombre) {
         this.Nombre = Nombre;
     }
 
+    @Override
     public int getTipoUser() {
         return TipoUser;
     }
 
+    @Override
     public void setTipoUser(int TipoUser) {
         this.TipoUser = TipoUser;
+    }
+
+    public int getCodigoEstu() {
+        return CodigoEstu;
+    }
+
+    public void setCodigoEstu(int CodigoEstu) {
+        this.CodigoEstu = CodigoEstu;
+    }
+
+    @Override
+    public String getPrimerAp() {
+        return PrimerAp;
+    }
+
+    @Override
+    public void setPrimerAp(String PrimerAp) {
+        this.PrimerAp = PrimerAp;
+    }
+
+    @Override
+    public String getSegundAp() {
+        return SegundAp;
+    }
+
+    @Override
+    public void setSegundAp(String SegundAp) {
+        this.SegundAp = SegundAp;
     }
     
     
