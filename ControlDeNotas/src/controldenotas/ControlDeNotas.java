@@ -5,17 +5,18 @@
  */
 package controldenotas;
 
-/**
- *
- * @author Jonat
- */
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Random;
+import java.util.Scanner;
+
 public class ControlDeNotas {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        ArrayList<Asignatura> Asigs = new ArrayList<Asignatura>();
     }
     
 }

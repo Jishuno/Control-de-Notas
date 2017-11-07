@@ -5,10 +5,36 @@
  */
 package controldenotas;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Jonat
  */
 public class Asignatura {
+    private ArrayList<Estudiante> Estudiantes;
+    private Docente Docente;
+
+    public Asignatura(ArrayList<Estudiante> Estudiantes, Docente Docente) {
+        this.Estudiantes = Estudiantes;
+        this.Docente = Docente;
+    }
+
+    public ArrayList<Estudiante> getEstudiantes() {
+        return Estudiantes;
+    }
+
+    public void setEstudiantes(ArrayList<Estudiante> Estudiantes) {
+        this.Estudiantes = Estudiantes;
+    }
+
+    public Docente getDocente() {
+        return Docente;
+    }
+
+    public void setDocente(Docente Docente) {
+        this.Docente = Docente;
+    }
+    
     
 }
